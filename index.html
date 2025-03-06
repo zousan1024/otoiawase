@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>お問い合わせフォーム</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <p class="tyuui">※これは練習用サイトです。実際に購入は出来ません。</p>
-<div class="contact-form">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>お問い合わせフォーム</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <p class="tyuui">※これは練習用サイトです。実際に購入は出来ません。</p>
+  <p class="tyuui">送信後に画面が変わったら送れています。</p>
+  <div class="contact-form">
     <p class="title">ご予約はこちら</p>
 
     <form action="https://api.staticforms.xyz/submit" method="post">
@@ -17,7 +20,7 @@
       <input type="hidden" name="subject" value="Test">
       <div class="item">
         <label class="label">お名前</label>
-        <input type="text" class="inputs" autocomplete="off" name="name" required/>
+        <input type="text" class="inputs" autocomplete="off" name="name" required />
       </div>
 
       <div class="item">
@@ -28,36 +31,30 @@
       <div class="item">
         <p class="label">ご予約席</p>
         <div class="inputs">
-          <input id="s" type="radio" name="$radio" autocomplete="off" value="S席" /><label for="S席"
-            >S席 10000円</label
-          ><br>
-          <input id="a" type="radio" name="$radio" autocomplete="off" value="A席" /><label for="A席"
-            >A席 5000円</label
-          ><br>
-          <input id="b" type="radio" name="$radio" autocomplete="off" value="B席" /><label for="B席"
-            >B席 3000円</label
-          >
+          <input id="s" type="radio" name="$radio" autocomplete="off" value="S席" required /><label for="S席">S席 10000円</label><br>
+          <input id="a" type="radio" name="$radio" autocomplete="off" value="A席" required /><label for="A席">A席 5000円</label><br>
+          <input id="b" type="radio" name="$radio" autocomplete="off" value="B席" required /><label for="B席">B席 3000円</label>
         </div>
       </div>
 
       <div class="item">
         <p class="label">枚数</p>
         <div class="inputs">
-          <input type="number" name="$number" autocomplete="off">
+          <input type="number" name="$number" autocomplete="off" required>
         </div>
       </div>
 
-        <div class="item">
-          <label class="label">ご質問</label>
-          <textarea class="inputsf" name="$question" autocomplete="off" placeholder="ご質問はこちら"></textarea>
-        </div>
+      <div class="item">
+        <label class="label">ご質問</label>
+        <textarea class="inputsf" name="$question" autocomplete="off" placeholder="ご質問はこちら"></textarea>
+      </div>
 
-        <div class="button-area">
-          <input type="submit" value="予約決定" />
-          <input type="reset" value="リセット" />
-        </div>
+      <div class="button-area">
+        <input type="submit" value="予約決定" />
+        <input type="reset" value="リセット" />
       </div>
     </form>
-</div>
-  </body>
+  </div>
+</body>
+
 </html>
