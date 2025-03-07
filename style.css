@@ -103,8 +103,11 @@ input[type="reset"] {
 
 /* スマートフォン (最大 600px) */
 @media (max-width: 600px) {
-  form {
+  body {
     padding: 2px;
+  }
+
+  form {
     height: 100vh;
   }
 
